@@ -12,7 +12,7 @@ class Media extends Component {
             }
         }
         return(
-            <div style={styles.container}>
+            <div className="Media">
                 <div>
                     <img 
                         src="./images/covers/bitcoin.jpg" 
