@@ -32,8 +32,9 @@ class Media extends Component {
 
 Media.propTypes = {
     image: PropTypes.string,
-    title: PropTypes.string,
-    author: PropTypes.string
+    title: PropTypes.string.isRequired,
+    author: PropTypes.string,
+    type: PropTypes.oneOf(['video','audio'])
 
 }
 
