@@ -13,15 +13,16 @@ class Media extends Component {
         }
         return(
             <div className="Media">
-                <div>
+                <div className="Media-cover">
                     <img 
                         src="./images/covers/bitcoin.jpg" 
                         alt=""
                         width={260}
                         height={160}
+                        className= "Media-image"
                     />
-                    <h3>Por que aprender React??</h3>
-                    <p>Andres</p>
+                    <h3 className="Media-title" >Por que aprender React??</h3>
+                    <p className="Media-author" >Andres</p>
                 </div>
             </div>
         )
