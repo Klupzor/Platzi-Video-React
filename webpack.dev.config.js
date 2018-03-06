@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    invie: path.resolve(__dirname, 'src/index.js'),
+    "platzi-video": path.resolve(__dirname, 'index.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -39,7 +39,7 @@ module.exports = {
             name: 'images/[name].[hash].[ext]',
           }
         }
-      },
+      }
     ]
   }
 }
