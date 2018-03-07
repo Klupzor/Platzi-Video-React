@@ -5,9 +5,10 @@ function Categories(props) {
     return (
         <div className="Categories">
             {
-                props.categories.map((item) => {
-                    return <Category Key={item.id} {...item} />
-                })
+                props.categories.map((item) => 
+                     <Category key={item.id}
+                     {...item} />
+                )
             }
         </div>
     )
