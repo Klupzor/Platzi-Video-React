@@ -1,6 +1,6 @@
 import React from 'react';
-import Media from './media'
 import './playlist.css'
+import Media from './media';
 
 
 function Playlist(props) {
@@ -18,3 +18,4 @@ function Playlist(props) {
     )    
 }
  export default Playlist
+ 
