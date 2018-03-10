@@ -12,6 +12,8 @@ const Search = (props) => (
         placeholder="Busca tu vídeo favorito"
         className="Search-input"
         name="search"
+        onChange={props.handleChange}
+        value={props.value}
     />
     </form>
 )
