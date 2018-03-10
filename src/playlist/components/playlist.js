@@ -11,7 +11,7 @@ function Playlist(props) {
         
             {
                 props.playlist.map((item) => {
-                    return <Media {...item} key={item.id} />
+                    return <Media handleClick={props.handleOpenModal} {...item} key={item.id} />
                 })
             }
         </div>

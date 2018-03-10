@@ -7,7 +7,9 @@ function Categories(props) {
             {
                 props.categories.map((item) => 
                      <Category key={item.id}
-                     {...item} />
+                     {...item} 
+                     handleOpenModal={props.handleOpenModal}
+                     />
                 )
             }
         </div>
