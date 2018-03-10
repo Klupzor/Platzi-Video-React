@@ -4,11 +4,15 @@ import Search from './../components/search';
 class SearchContainer extends Component {
     handleSubmit = event => {
         event.preventDefault()
-        console.log('submit')
+        console.log(this.input.value, 'submit')
+    }
+    setInputRef = element => {
+        this.input = element
     }
     render() {
         return (
-            <Search 
+            <Search
+                setRef={this.setInputRef}
                 handleSubmit={this.handleSubmit}
             />
         )

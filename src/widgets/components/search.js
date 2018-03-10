@@ -7,6 +7,7 @@ const Search = (props) => (
         onSubmit={props.handleSubmit}
     >
     <input
+        ref={props.setRef}
         type="text"
         placeholder="Busca tu vídeo favorito"
         className="Search-input"
