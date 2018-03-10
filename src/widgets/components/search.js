@@ -1,11 +1,16 @@
 import React from 'react'
 import './search.css'
 
-const Search = () => (
-    <form action="" className="Search">
-    <input type="text"
-    placeholder="Busca tu vídeo favorito"
-    className="Search-input"
+const Search = (props) => (
+    <form
+        className="Search"
+        onSubmit={props.handleSubmit}
+    >
+    <input
+        type="text"
+        placeholder="Busca tu vídeo favorito"
+        className="Search-input"
+        name="search"
     />
     </form>
 )
