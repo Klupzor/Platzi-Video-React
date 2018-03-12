@@ -1,5 +1,5 @@
 import React from 'react'
-import 'play-pause.css'
+import './play-pause.css'
 import Play from './../../icons/components/play';
 import Pause from './../../icons/components/pause';
 
