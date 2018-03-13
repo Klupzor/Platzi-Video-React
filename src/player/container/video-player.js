@@ -6,6 +6,7 @@ import PlayPause from './../components/play-pause';
 import Timer from './../components/timer';
 import VideoPlayerControls from './../components/video-player-controls';
 import ProgressBar from './../components/progress-bar';
+import Spinner from './../components/spinner';
 
 class VideoPlayer extends Component {
     state = {
@@ -60,7 +61,7 @@ class VideoPlayer extends Component {
                     handleProgressChange={this.handleProgressChange}
                     />
                 </VideoPlayerControls>
-            
+                <Spinner />
                 <Video
                     autoplay={this.props.autoplay}
                     pause={this.state.pause}
