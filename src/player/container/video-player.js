@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import VideoPlayerLayout from './../components/video-player-layout';
 import Video from '../components/video'
 import Title from './../components/title';
@@ -17,7 +17,7 @@ class VideoPlayer extends Component {
         currentTime: 0,
         loading: false
     }
-    togglePlay= (event) => {
+    togglePlay = (event) => {
         this.setState({
             pause: !this.state.pause
         })
@@ -26,7 +26,7 @@ class VideoPlayer extends Component {
     componentDidMount() {
         this.setState({
             pause: (!this.props.autoplay)
-        })        
+        })
     }
 
     handleLoadedMetadata = event => {
@@ -68,35 +68,35 @@ class VideoPlayer extends Component {
     }
     render() {
         return (
-            <VideoPlayerLayout 
-            setRef={this.setRef}
+            <VideoPlayerLayout
+                setRef={this.setRef}
             >
                 <Title
-                title="esto es un video "
+                    title="esto es un video "
                 />
                 <VideoPlayerControls>
                     <PlayPause
-                    pause={this.state.pause} 
-                    handleClick={this.togglePlay}
+                        pause={this.state.pause}
+                        handleClick={this.togglePlay}
                     />
-                    <Timer 
+                    <Timer
                         duration={this.state.duration}
                         currentTime={this.state.currentTime}
                     />
-                    <ProgressBar 
-                    duration={this.state.duration}
-                    currentTime={this.state.currentTime}
-                    handleProgressChange={this.handleProgressChange}
+                    <ProgressBar
+                        duration={this.state.duration}
+                        currentTime={this.state.currentTime}
+                        handleProgressChange={this.handleProgressChange}
                     />
-                    <Volume 
-                    handleVolumeChange={this.handleVolumeChange}
+                    <Volume
+                        handleVolumeChange={this.handleVolumeChange}
                     />
-                    <FullScreen 
-                    handleFullScreenClick={this.handleFullScreenClick}
+                    <FullScreen
+                        handleFullScreenClick={this.handleFullScreenClick}
                     />
                 </VideoPlayerControls>
-                <Spinner 
-                active={this.state.loading}
+                <Spinner
+                    active={this.state.loading}
                 />
                 <Video
                     autoplay={this.props.autoplay}
